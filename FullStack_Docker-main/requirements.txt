@@ -1,0 +1,3 @@
+# Required packages for the Book Inventory application
+streamlit==1.10.0  # Specified version for consistency
+psycopg2-binary==2.9.1  # Specified version for consistency

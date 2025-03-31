@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Docker: Book Inventory Application",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "run-book-inventory-container",
+            "python": {
+                "pathMappings": [
+                    {
+                        "localRoot": "${workspaceFolder}",
+                        "remoteRoot": "/app"
+                    }
+                ],
+                "projectType": "general"
+            }
+        }
+    ]
+}

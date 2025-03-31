@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "docker-build",
+			"label": "build-book-inventory-image",
+			"platform": "python",
+			"dockerBuild": {
+				"tag": "bookinventory:latest",
+				"dockerfile": "${workspaceFolder}/Dockerfile",
+				"context": "${workspaceFolder}",
+				"pull": true
+			}
+		},
+		{
+			"type": "docker-run",
+			"label": "run-book-inventory-container",
+			"dependsOn": [
+				"build-book-inventory-image"
+			],
+			"python": {
+				"file": "app.py"
+			}
+		}
+	]
+}

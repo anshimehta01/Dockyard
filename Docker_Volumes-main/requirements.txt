@@ -1,0 +1,1 @@
+# Run 'pip freeze > requirements.txt' in the terminal to replace this file and make sure that app dependencies are migrated from your host machine or virtual environment into your container. 
